@@ -1,0 +1,329 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/** Global **/
+
+.conteiner {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'PT Sans', sans-serif;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+h4 {
+    font-size: 2.8rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+/**Grid**/
+
+@media (min-width: 700px) {
+    .grid {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .centrar-columnas {
+        justify-content: center;
+    }
+
+    .columnas-4 {
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+
+    .columnas-6 {
+        flex: 0 0 calc(50% - 1rem);
+    }   
+    .columnas-6 p {
+        margin-top: 0;
+    }
+
+    .columnas-8 {
+        flex: 0 0 calc(66.6% - 1rem);
+    }
+
+    .columnas-10 {
+        flex: 0 0 calc(83.3% - 1rem);
+    }
+
+    .columnas-12 {
+        flex: 0 0 100%;
+    }
+}
+
+
+
+/** Utilidades **/
+
+.text-center {
+    text-align: center;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+/** Botones **/
+.btn {
+    display: block;
+    text-align: center;
+    padding: 1rem 3rem;
+    margin: 2rem 0;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2rem;
+    cursor: pointer;
+    flex: 0 0 100%;
+}
+
+@media (min-width: 700px) {
+    .btn {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+
+.btn-primario {
+    background-color: #000;
+}
+
+.btn-secundario {
+    background-color: #784d4c;
+}
+
+/** Header **/
+@media (min-width:700px) {
+    .bar{
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+    }
+}
+
+.site-header {
+    background-image: url(../img/index.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 60rem;
+}
+
+.site-header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.site-header h1 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.site-header h1 span {
+    font-weight: 700;
+}
+
+.text-header {
+    color: #fff;
+    text-align: center;
+    margin-top: 5rem;
+}
+@media (min-width: 700px) {
+    .text-header{
+        margin-top: 15rem;
+    }
+}
+
+.text-header p {
+    font-size: 2.2rem;
+}
+
+/** Nav **/
+
+.navegation a {
+    text-align: center;
+    display: block;
+    font-size: 1.8rem;
+    color: #fff;
+    text-decoration: none;
+}
+@media (min-width: 700px) {
+    .navegation a {
+        display: inline;
+        margin-right: 2rem;
+    }
+    .navegation a:last-of-type {
+        margin: 0;
+    }
+}
+
+.text-header {
+    font-size: 2.2rem;
+}
+
+/** Contenido primncipal Home **/
+
+.conteiner-principal {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog {
+    width: 100%;
+}
+
+.blog,
+.cursos {
+    flex: 0 0 100%;
+}
+
+.cursos {
+    order: -1;
+}
+
+@media (min-width: 700px) {
+    .conteiner-principal {
+        justify-content: space-between;
+    }
+    .blog {
+        flex-basis: 66.6%;
+        
+    }
+    .cursos {
+        flex-basis: calc(33.3% - 4rem);
+        order: 2;
+    }
+}
+
+/** Opcional **/
+
+.entrada-blog {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.entrada-blog:last-of-type {
+    border-bottom: none;
+}
+
+/** Cursos Sidebar **/
+
+.cursos-lista {
+    padding: 0;
+    list-style: none;
+}
+
+.curso {
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #e1e1e1;
+    padding-top: 3rem;
+}
+
+.curso:last-of-type {
+    border-bottom: none;
+}
+
+.curso p {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.curso p span {
+    font-weight: 400;
+}
+
+/**footer**/
+
+.site-footer {
+    background-color: #000;
+    padding: 3rem;
+    margin-top: 4rem;
+}
+
+.site-footer p {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+}
+
+.site-footer p span {
+    font-weight: 700;
+}
+
+/** Contacto **/
+
+
+.formulario-contacto {
+    background-color: #fff;
+    padding: 5rem;
+}
+
+@media (min-width: 700px) {
+    .formulario-contacto {
+        margin-top: -10rem;
+    }
+}
+
+.formulario-contacto .campo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.formulario-contacto .campo label {
+    flex: 0 0 8rem;
+}
+
+.formulario-contacto .campo input:not([type="submit"]),
+.formulario-contacto textarea{
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+}
+
+.formulario-contacto textarea {
+    height: 20rem;
+}
+
+.formulario-contacto .enviar {
+    display: flex;
+    justify-content: flex-end;
+}
+
